@@ -1,0 +1,60 @@
+@import "./../../styles/Variables";
+.footer {
+  position: relative;
+  font-size: 15px;
+  overflow: hidden;
+  padding: 80px 0;
+  background: #f5f5f5;
+  @media ($tablet_max) {
+    padding: 50px 0;
+  }
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &__logo {
+    width: 68px;
+    text-align: center;
+    animation: rubberBand;
+    animation-duration: 1s;
+    animation-delay: 0.1s;
+    animation-fill-mode: forwards;
+
+    &:hover {
+      animation: none;
+    }
+  }
+  &__social__icons {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+    gap: 15px;
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      line-height: 42px;
+      border: 1px solid #c7c4c4;
+      color: #687693;
+      font-size: 15px;
+      border-radius: 50%;
+      transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+      &:hover {
+        background: #000;
+        color: #fff;
+      }
+    }
+  }
+  .copyright__text {
+    p {
+      text-align: center;
+      font-size: 18px;
+      color: #687693;
+      line-height: 1.5em;
+    }
+  }
+}

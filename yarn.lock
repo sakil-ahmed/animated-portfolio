@@ -864,6 +864,11 @@ vite@^4.1.0:
   optionalDependencies:
     fsevents "~2.3.2"
 
+wow.js@^1.2.2:
+  version "1.2.2"
+  resolved "https://registry.yarnpkg.com/wow.js/-/wow.js-1.2.2.tgz#247519b0a342319b1a63e22aea9acec1a9ea57f5"
+  integrity sha512-YTW9eiZimHCJDWofsiz2507txaPteUiQD461I/D8533AiRAn3+Y68/1LDuQ3OTgPjagGZLPYKrpoSgjzeQrO6A==
+
 yallist@^3.0.2:
   version "3.1.1"
   resolved "https://registry.yarnpkg.com/yallist/-/yallist-3.1.1.tgz#dbb7daf9bfd8bac9ab45ebf602b8cbad0d5d08fd"

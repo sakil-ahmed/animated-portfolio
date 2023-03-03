@@ -4,7 +4,7 @@ import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { AiOutlineSearch } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import Menubar from "./navbar/Navbar";
-import logo from "./../../assets/image.webp";
+import logo from "./../../assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);

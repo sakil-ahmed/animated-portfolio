@@ -3,6 +3,7 @@
   position: relative;
   padding: 50px 0;
   overflow: hidden;
+  border-bottom: 1px solid #ebebeb;
   @media ($desktop_max) {
     padding: 0;
   }
@@ -130,7 +131,10 @@
 
       img {
         max-width: 70%;
-        margin: 0 auto;
+        margin-left: auto;
+        @media ($tablet_max) {
+          margin: 0 auto;
+        }
       }
     }
   }
