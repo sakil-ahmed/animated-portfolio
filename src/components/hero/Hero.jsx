@@ -16,7 +16,7 @@ const Hero = () => {
     <section className="home line" id="home">
       <div className="container">
         <div className="row">
-          <div data-aos="fade-right" className="hero__left__text">
+          <div className="hero__left__text animate__animated animate__fadeInLeft">
             <h2 className="hero__title">
               <AnimatedLetters
                 letterClass={letterClass}
@@ -39,12 +39,12 @@ const Hero = () => {
               </a>
             </div>
           </div>
-          <div data-aos="fade-left" className="hero__right__img">
+          <div className="hero__right__img animate__animated animate__fadeInRight">
             <img src={img} alt="" />
           </div>
         </div>
       </div>
-      <div className="visible__text">
+      <div className="visible__text animate__animated animate__zoomIn">
         <h1>Developer</h1>
       </div>
     </section>

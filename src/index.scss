@@ -14,14 +14,14 @@
 html,
 body {
   height: 100%;
+  scroll-behavior: smooth;
+  transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
 }
 
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
   font-family: "Josefin Sans", sans-serif;
-  transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
-  scroll-behavior: smooth;
 }
 
 img,
