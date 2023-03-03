@@ -1,0 +1,41 @@
+@import "./../../../styles/Variables";
+.nav__menu__items {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media ($tablet_max) {
+    flex-direction: column;
+    padding: 0;
+  }
+  li {
+    list-style: none;
+    a {
+      text-decoration: none;
+      margin: 0 10px;
+      font-size: 18px;
+      display: block;
+      color: #323232;
+      font-weight: 500;
+      position: relative;
+      cursor: pointer;
+      @media ($tablet_max) {
+        color: $white;
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background-color: #000;
+        transition: 0.3s;
+      }
+      &:hover::after {
+        width: 100%;
+        left: 0;
+      }
+    }
+  }
+}

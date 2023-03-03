@@ -1,0 +1,136 @@
+@import "./../../styles/Variables";
+.home {
+  position: relative;
+  padding: 50px 0;
+  @media ($desktop_max) {
+    padding: 0;
+  }
+
+  .visible__text {
+    position: absolute;
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    z-index: -1;
+    @media ($tablet_max) {
+      display: none;
+    }
+
+    h1 {
+      font-size: 150px;
+      letter-spacing: 5px;
+      color: #f7f7f7;
+      line-height: 200px;
+      text-transform: uppercase;
+      @media ($desktop_max) {
+        font-size: 100px;
+      }
+    }
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media ($desktop_max) {
+      flex-direction: column;
+    }
+    .hero__left__text {
+      padding: 70px 0 0 70px;
+      @media ($desktop_max) {
+        padding: 50px 0 0 0;
+      }
+      .hero__title {
+        font-size: 70px;
+        line-height: 80px;
+        margin: 10px 0 25px;
+        color: #323232;
+        @media (max-width: 1122px) {
+          font-size: 60px;
+        }
+        @media ($desktop_max) {
+          text-align: center;
+        }
+        @media ($phone_max) {
+          font-size: 50px;
+          line-height: 60px;
+          margin-bottom: 0;
+        }
+        @media (max-width: 400px) {
+          font-size: 40px;
+          line-height: 50px;
+        }
+      }
+      .subtitle__padding {
+        padding: 30px 0;
+        @media ($phone_max) {
+          padding: 10px 0;
+        }
+      }
+      .btns {
+        @media ($desktop_max) {
+          text-align: center;
+        }
+      }
+      .hero__subtitle {
+        font-size: 20px;
+        text-transform: uppercase;
+        letter-spacing: 5px;
+        position: relative;
+
+        color: #687693;
+        line-height: 1.5em;
+        margin-bottom: 1rem;
+        position: relative;
+        text-align: center;
+        @media ($desktop_min) {
+          padding-right: 120px;
+          display: inline-block;
+        }
+        &::before {
+          @media ($desktop_min) {
+            position: absolute;
+            right: 0;
+            top: 13px;
+            width: 100px;
+            height: 1px;
+            background: #202020;
+            content: "";
+          }
+        }
+      }
+      .contact__btn {
+        background: #19181d;
+        color: #fff;
+        display: inline-block;
+        font-weight: 600;
+        padding: 15px 45px;
+        border: 1px solid transparent;
+        text-transform: capitalize;
+        z-index: 1;
+        position: relative;
+        font-size: 16px;
+        transition: all 0.3s;
+        border-radius: 0;
+        cursor: pointer;
+        text-decoration: none;
+        &:hover {
+          background: transparent;
+          color: #19181d;
+          border: 1px solid #19181d;
+        }
+      }
+    }
+    .hero__right__img {
+      margin-top: 20px;
+      @media ($tablet_min) {
+        max-width: 50%;
+        margin-top: 0;
+      }
+
+      img {
+        max-width: 70%;
+        margin: 0 auto;
+      }
+    }
+  }
+}

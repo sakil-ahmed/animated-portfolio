@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+@import "./styles/Variables";
+// Css Reset Code
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Josefin Sans", sans-serif;
+  transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+  scroll-behavior: smooth;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+.line::after,
+.line::before {
+  @media ($desktop_min) {
+    position: absolute;
+    width: 1px;
+    height: 100%;
+    content: "";
+    background: #ebebeb;
+    z-index: 11;
+  }
+}
+
+.line::before {
+  left: 30px;
+  top: 0;
+  @media (min-width: 1200px) {
+    left: 100px;
+  }
+}
+.line::after {
+  right: 30px;
+  top: 0;
+  @media (min-width: 1200px) {
+    right: 100px;
+  }
+}
+.container__fluid {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
