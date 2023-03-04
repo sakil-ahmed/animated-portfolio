@@ -1,0 +1,31 @@
+@import "./../../styles/Variables";
+.marque__container {
+  background: #f5f5f5;
+  padding: 40px 0;
+  position: relative;
+  z-index: -1;
+  overflow: hidden;
+  @media ($tablet_max) {
+    padding: 20px 0;
+  }
+  p {
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 102%;
+    white-space: nowrap;
+    will-change: transform;
+    margin-bottom: 0;
+    color: #323232;
+
+    @media ($tablet_max) {
+      font-size: 38px;
+    }
+
+    @media ($phone_max) {
+      font-size: 30px;
+    }
+  }
+  .overlay {
+    display: none;
+  }
+}

@@ -1,10 +1,10 @@
 import Aos from "aos";
 import React, { useEffect } from "react";
 import "./App.scss";
-import Header from "./components/header/Header";
-import Hero from "./components/hero/Hero";
 import "aos/dist/aos.css";
-import Footer from "./components/footer/Footer";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Work from "./pages/Work";
 
 function App() {
   useEffect(() => {
@@ -12,9 +12,10 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Header />
-      <Hero />
-      <Footer />
+      <Routes>
+        <Route index element={<Home />} />
+        <Route path="/work" element={<Work />} />
+      </Routes>
     </div>
   );
 }

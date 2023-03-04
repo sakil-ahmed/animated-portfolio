@@ -6,7 +6,7 @@ const Navbar = () => {
   return (
     <ul className="nav__menu__items">
       <li>
-        <a href={"#home"}>Home</a>
+        <Link to={"/"}>Home</Link>
       </li>
       <li>
         <a href={"#about"}>About</a>
