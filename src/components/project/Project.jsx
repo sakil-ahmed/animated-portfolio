@@ -8,27 +8,31 @@ import { motion } from "framer-motion";
 const card = [
   {
     id: 1,
+    img: "https://tonu-next-light.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimg-1.7f344d00.jpg&w=640&q=75",
     title: "",
-    subTitle: "",
-    path: "",
+    subTitle: "Minimog",
+    path: "https://minimog.netlify.app/",
   },
   {
     id: 2,
+    img: "https://tonu-next-light.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimg-2.1458bc21.jpg&w=640&q=75",
     title: "",
-    subTitle: "",
-    path: "",
+    subTitle: "Okiro",
+    path: "https://okario.netlify.app",
   },
   {
     id: 3,
+    img: "https://tonu-next-light.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimg-3.e28a6618.jpg&w=640&q=75",
     title: "",
-    subTitle: "",
-    path: "",
+    subTitle: "Grover Store",
+    path: "https://groverstore.netlify.app",
   },
   {
     id: 4,
+    img: "https://tonu-next-light.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimg-6.6ac3b5b1.jpg&w=640&q=75",
     title: "",
-    subTitle: "",
-    path: "",
+    subTitle: "Start Box",
+    path: "https://startbox.netlify.app",
   },
 ];
 
@@ -76,7 +80,7 @@ const Project = () => {
             className="card__container"
           >
             {card.map((item) => {
-              return <Card key={item.id} />;
+              return <Card key={item.id} item={item} />;
             })}
           </motion.div>
           <div className="project__btns">

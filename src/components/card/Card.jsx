@@ -1,19 +1,16 @@
 import React from "react";
 import "./Card.scss";
 
-const Card = () => {
+const Card = ({ item: { img, subTitle, path } }) => {
   return (
     <div className="card__box">
-      <a href="#"></a>
+      <a href={path} target="_blank"></a>
       <div className="card__thumbnail">
-        <img
-          src="https://tonu-next-light.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimg-1.7f344d00.jpg&w=640&q=75"
-          alt="Project Thumbnail"
-        />
+        <img src={img} alt="Project Thumbnail" />
       </div>
       <div className="card__content">
-        <h3>Business Website Design</h3>
-        <p>Web Design</p>
+        <h3>Website Development</h3>
+        <p>{subTitle}</p>
       </div>
     </div>
   );

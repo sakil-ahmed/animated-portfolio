@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Contact.scss";
 import AnimatedLetters from "./../AnimatedLetters/index";
 import Form from "./form/Form";
+import { motion } from "framer-motion";
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -19,16 +20,36 @@ const Contact = () => {
             <h1>Contat Me</h1>
           </div>
           <div className="from__wraper">
-            <h2 className="contact__title">
+            <motion.h2
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 100 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              className="contact__title"
+            >
               <AnimatedLetters
                 letterClass={letterClass}
                 strArray={Arrayname}
                 idx={15}
               />
-            </h2>
-            <p className="contact__description">
+            </motion.h2>
+            <motion.p
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.5 }}
+              transition={{ duration: 0.5 }}
+              variants={{
+                hidden: { opacity: 0, y: 100 },
+                visible: { opacity: 1, y: 0 },
+              }}
+              className="contact__description"
+            >
               Your email address will not be published. All fields are required
-            </p>
+            </motion.p>
             <Form />
           </div>
         </div>
