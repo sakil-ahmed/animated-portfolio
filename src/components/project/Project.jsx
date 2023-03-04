@@ -24,6 +24,12 @@ const card = [
     subTitle: "",
     path: "",
   },
+  {
+    id: 4,
+    title: "",
+    subTitle: "",
+    path: "",
+  },
 ];
 
 const Project = () => {

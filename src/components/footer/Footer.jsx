@@ -6,7 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import logo from "./../../assets/logo.png";
 const Footer = () => {
   return (
-    <footer className="footer line" id="contact">
+    <footer className="footer line">
       <div className="container">
         <div className="row">
           <div className="animate__animated footer__logo ">
