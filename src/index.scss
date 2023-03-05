@@ -24,6 +24,24 @@ body {
   font-family: "Josefin Sans", sans-serif;
 }
 
+::-webkit-scrollbar {
+  height: 8px;
+  width: 8px;
+  background: #687693;
+  // -webkit-border-radius: 1ex;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+    rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #d6d6d6;
+  -webkit-border-radius: 1ex;
+}
+
+// ::-webkit-scrollbar-corner {
+//   background: #fff3;
+// }
+
 img,
 picture,
 video,

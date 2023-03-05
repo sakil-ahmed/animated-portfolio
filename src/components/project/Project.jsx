@@ -4,32 +4,51 @@ import AnimatedLetters from "./../AnimatedLetters/index";
 import Card from "./../card/Card";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
+import minimog from "./../../assets/minimog.png";
+import okiro from "./../../assets/okairo.png";
+import grover from "./../../assets/grover.png";
+import portfolio from "./../../assets/portfolio.webp";
+import startbox from "./../../assets/start.png";
 
 const card = [
   {
     id: 1,
-    img: "https://tonu-next-light.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimg-1.7f344d00.jpg&w=640&q=75",
+    img: minimog,
     title: "",
     subTitle: "Minimog",
     path: "https://minimog.netlify.app/",
   },
   {
     id: 2,
-    img: "https://tonu-next-light.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimg-2.1458bc21.jpg&w=640&q=75",
+    img: okiro,
     title: "",
     subTitle: "Okiro",
     path: "https://okario.netlify.app",
   },
   {
     id: 3,
-    img: "https://tonu-next-light.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimg-3.e28a6618.jpg&w=640&q=75",
+    img: grover,
     title: "",
     subTitle: "Grover Store",
     path: "https://groverstore.netlify.app",
   },
   {
     id: 4,
+    img: portfolio,
+    title: "",
+    subTitle: "portfolio V2",
+    path: "https://sakilsahmed.netlify.app/",
+  },
+  {
+    id: 5,
     img: "https://tonu-next-light.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimg-6.6ac3b5b1.jpg&w=640&q=75",
+    title: "",
+    subTitle: "Start Box",
+    path: "https://startbox.netlify.app",
+  },
+  {
+    id: 6,
+    img: startbox,
     title: "",
     subTitle: "Start Box",
     path: "https://startbox.netlify.app",

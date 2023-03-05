@@ -16,6 +16,7 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/work" element={<Work />} />
       </Routes>
+      ,
     </div>
   );
 }
