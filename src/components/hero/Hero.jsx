@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./Hero.scss";
 import AnimatedLetters from "./../AnimatedLetters/index";
-import img from "./../../assets/hero-image.webp";
+import img from "./../../assets/avater-removebg-preview.png";
 
 const Hero = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
