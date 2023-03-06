@@ -17,6 +17,7 @@ const card = [
     title: "",
     subTitle: "Minimog",
     path: "https://minimog.netlify.app/",
+    git: "https://github.com/sakil-ahmed/Minimog",
   },
   {
     id: 2,
@@ -24,6 +25,7 @@ const card = [
     title: "",
     subTitle: "Okiro",
     path: "https://okario.netlify.app",
+    git: "https://github.com/sakil-ahmed/Okiro",
   },
   {
     id: 3,
@@ -31,6 +33,7 @@ const card = [
     title: "",
     subTitle: "Grover Store",
     path: "https://groverstore.netlify.app",
+    git: "https://github.com/sakil-ahmed/grover",
   },
   {
     id: 4,
@@ -38,6 +41,7 @@ const card = [
     title: "",
     subTitle: "portfolio V2",
     path: "https://sakilsahmed.netlify.app/",
+    git: "https://github.com/sakil-ahmed/primary-portfolio",
   },
   {
     id: 5,
@@ -45,6 +49,7 @@ const card = [
     title: "",
     subTitle: "Start Box",
     path: "https://startbox.netlify.app",
+    git: "",
   },
   {
     id: 6,
@@ -52,6 +57,7 @@ const card = [
     title: "",
     subTitle: "Start Box",
     path: "https://startbox.netlify.app",
+    git: "https://github.com/sakil-ahmed/Startbox",
   },
 ];
 
@@ -87,17 +93,7 @@ const Project = () => {
               idx={15}
             />
           </motion.h2>
-          <motion.div
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.5 }}
-            transition={{ duration: 0.5 }}
-            variants={{
-              hidden: { opacity: 0, y: 100 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            className="card__container"
-          >
+          <motion.div className="card__container">
             {card.map((item) => {
               return <Card key={item.id} item={item} />;
             })}

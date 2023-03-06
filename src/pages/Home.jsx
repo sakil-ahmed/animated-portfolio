@@ -5,6 +5,7 @@ import Marque from "./../components/marque/Marque";
 import Project from "./../components/project/Project";
 import Footer from "./../components/footer/Footer";
 import Contact from "../components/contact/Contact";
+import Services from "../components/services/Services";
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
       <Header />
       <Hero />
       <Marque />
+      {/* <Services /> */}
       <Project />
       <Contact />
       <Footer />

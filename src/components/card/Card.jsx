@@ -2,10 +2,21 @@ import React from "react";
 import "./Card.scss";
 import { HiEye } from "react-icons/hi";
 import { AiFillGithub } from "react-icons/ai";
+import { motion } from "framer-motion";
 
 const Card = ({ item: { img, subTitle, path, git } }) => {
   return (
-    <div className="card__box">
+    <motion.div
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.5 }}
+      transition={{ duration: 0.5 }}
+      variants={{
+        hidden: { opacity: 0, y: 100 },
+        visible: { opacity: 1, y: 0 },
+      }}
+      className="card__box"
+    >
       <div className="card__thumbnail">
         <img src={img} alt="Project Thumbnail" />
       </div>
@@ -21,7 +32,7 @@ const Card = ({ item: { img, subTitle, path, git } }) => {
           </a>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
