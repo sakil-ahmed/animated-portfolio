@@ -103,4 +103,13 @@ form {
       }
     }
   }
+  .error__message {
+    opacity: 0;
+    visibility: hidden;
+    color: red;
+  }
+  .show {
+    opacity: 1;
+    visibility: visible;
+  }
 }

@@ -1,31 +1,22 @@
 import React, { useRef } from "react";
 import "./Form.scss";
 import { MdOutlineWifiCalling3, MdOutlineEmail } from "react-icons/md";
-import emailjs from "@emailjs/browser";
 import { motion } from "framer-motion";
+import { useForm } from "react-hook-form";
 
 const Form = () => {
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-    form.current.reset();
+  const {
+    register,
+    handleSubmit,
+    watch,
+    formState: { errors, isSubmitSuccessful, touchedFields },
+  } = useForm();
 
-    emailjs
-      .sendForm(
-        "service_zv7q7mg",
-        "template_rch4nmq",
-        form.current,
-        "RYB7CBoTag91d7Zoq"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-        },
-        (error) => {
-          console.log(error.text);
-        }
-      );
+  const onSubmit = (data) => {
+    form.current.reset();
+    console.log(data);
   };
 
   return (
@@ -39,7 +30,7 @@ const Form = () => {
         visible: { opacity: 1, y: 0 },
       }}
       ref={form}
-      onSubmit={sendEmail}
+      onSubmit={handleSubmit(onSubmit)}
     >
       <div className="form__input">
         <div className="form_group">
@@ -47,30 +38,43 @@ const Form = () => {
           <input
             type="text"
             name="name"
-            id="name"
             placeholder="Your Name"
-            required
+            {...register("name", { required: true })}
           />
+
+          <p className={`error__message ${errors.name && "show"}`}>
+            This field is required
+          </p>
         </div>
         <div className="form_group">
           <label htmlFor="email">Email*</label>
           <input
-            type="email"
+            type="text"
             name="email"
-            id="email"
             placeholder="Your Email"
-            required
+            {...register("email", {
+              required: true,
+              pattern: {
+                value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
+                message: "invalid email address",
+              },
+            })}
           />
+          <p className={`error__message ${errors.email && "show"}`}>
+            {errors.email ? errors.email.message : "This field is required"}
+          </p>
         </div>
       </div>
       <div className="form_group">
         <label htmlFor="message">Message*</label>
         <textarea
           name="message"
-          id="message"
           placeholder="Message"
-          required
+          {...register("message", { required: true })}
         ></textarea>
+        <p className={`error__message ${errors.message && "show"}`}>
+          This field is required
+        </p>
       </div>
       <div className="contact__btns">
         <button className="btn" type="submit">
