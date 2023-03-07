@@ -3,6 +3,7 @@ import "./Footer.scss";
 import { RiFacebookFill } from "react-icons/ri";
 import { AiOutlineTwitter } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { BsGithub } from "react-icons/bs";
 import logo from "./../../assets/logo.png";
 const Footer = () => {
   return (
@@ -26,6 +27,9 @@ const Footer = () => {
               target="_blank"
             >
               <FaLinkedinIn />
+            </a>
+            <a href="https://github.com/sakil-ahmed" target="_blank">
+              <BsGithub />
             </a>
           </div>
           <div className="copyright__text">

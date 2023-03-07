@@ -6,6 +6,7 @@ const Work = () => {
   return (
     <div>
       <Header />
+
       <Footer />
     </div>
   );

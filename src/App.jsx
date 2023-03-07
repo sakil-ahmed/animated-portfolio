@@ -27,7 +27,6 @@ function App() {
 
   const showClass = scrollPosition >= 300 ? "show__link" : "";
 
-  console.log(showClass);
   return (
     <div className="App">
       <Routes>
