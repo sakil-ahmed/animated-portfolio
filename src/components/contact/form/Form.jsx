@@ -61,7 +61,9 @@ const Form = () => {
             })}
           />
           <p className={`error__message ${errors.email && "show"}`}>
-            {errors.email ? errors.email.message : "This field is required"}
+            {errors.email?.message
+              ? errors.email.message
+              : "This field is required"}
           </p>
         </div>
       </div>
