@@ -16,6 +16,7 @@ const WordCloud = () => {
 
   const texts = [
     "ReactJS",
+    "ReactQuery",
     "Redux",
     "HTML5",
     "CSS3",
