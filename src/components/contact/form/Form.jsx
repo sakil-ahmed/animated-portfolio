@@ -3,6 +3,9 @@ import "./Form.scss";
 import { MdOutlineWifiCalling3, MdOutlineEmail } from "react-icons/md";
 import { motion } from "framer-motion";
 import { useForm } from "react-hook-form";
+import emailjs from "@emailjs/browser";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const Form = () => {
   const form = useRef();
@@ -10,13 +13,46 @@ const Form = () => {
   const {
     register,
     handleSubmit,
-    watch,
-    formState: { errors, isSubmitSuccessful, touchedFields },
+
+    formState: { errors },
   } = useForm();
 
   const onSubmit = (data) => {
+    emailjs
+      .sendForm(
+        "service_28srm6x",
+        "template_9taiuii",
+        form.current,
+        "RYB7CBoTag91d7Zoq"
+      )
+      .then(
+        (result) => {
+          toast.success("Email Send Successfully", {
+            position: "top-center",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+        },
+        (error) => {
+          toast.error("There was an error try again", {
+            position: "top-right",
+            autoClose: 2000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: true,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+          });
+        }
+      );
+
     form.current.reset();
-    console.log(data);
   };
 
   return (
@@ -56,7 +92,7 @@ const Form = () => {
               required: true,
               pattern: {
                 value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                message: "invalid email address",
+                message: "Invalid email address",
               },
             })}
           />
@@ -97,6 +133,18 @@ const Form = () => {
           </span>
         </div>
       </div>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </motion.form>
   );
 };

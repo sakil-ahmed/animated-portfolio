@@ -107,9 +107,14 @@ form {
     opacity: 0;
     visibility: hidden;
     color: red;
+    font-size: 14px;
+    margin-top: 5px;
   }
   .show {
     opacity: 1;
     visibility: visible;
+  }
+  .Toastify__toast {
+    font-family: $Josefin;
   }
 }
