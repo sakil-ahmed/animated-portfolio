@@ -35,8 +35,10 @@ const Header = () => {
             </div>
             <Menubar />
           </nav>
-          <div className="search">
-            <AiOutlineSearch size={"23px"} />
+          <div className="btn">
+            <a className="resume__btn" href="resume.pdf" download>
+              Download CV
+            </a>
           </div>
         </div>
       </div>

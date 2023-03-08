@@ -67,4 +67,34 @@
       left: 0;
     }
   }
+
+  .btn {
+    .resume__btn {
+      background: #19181d;
+      color: #fff;
+      display: inline-block;
+      font-weight: 600;
+      padding: 15px 30px;
+      border: 1px solid transparent;
+      text-transform: capitalize;
+      z-index: 1;
+      position: relative;
+      font-size: 16px;
+      transition: all 0.3s;
+      border-radius: 0;
+      cursor: pointer;
+      text-decoration: none;
+
+      @media ($phone_max) {
+        padding: 8px 18px;
+        font-size: 14px;
+      }
+
+      &:hover {
+        background: transparent;
+        color: #19181d;
+        border: 1px solid #19181d;
+      }
+    }
+  }
 }
