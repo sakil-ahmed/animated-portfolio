@@ -36,7 +36,7 @@ const Header = () => {
             <Menubar />
           </nav>
           <div className="btn">
-            <a className="resume__btn" href="resume.pdf" download>
+            <a className="resume__btn" href="Resume.pdf" download>
               Download CV
             </a>
           </div>
