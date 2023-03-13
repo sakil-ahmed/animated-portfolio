@@ -37,7 +37,7 @@ const Header = () => {
           </nav>
           <div className="btn">
             <a className="resume__btn" href="Resume.pdf" download>
-              Download CV
+              Resume
             </a>
           </div>
         </div>
