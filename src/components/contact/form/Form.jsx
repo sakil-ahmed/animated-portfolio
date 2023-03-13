@@ -56,19 +56,18 @@ const Form = () => {
   };
 
   return (
-    <motion.form
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.5 }}
-      transition={{ duration: 0.5 }}
-      variants={{
-        hidden: { opacity: 0, y: 100 },
-        visible: { opacity: 1, y: 0 },
-      }}
-      ref={form}
-      onSubmit={handleSubmit(onSubmit)}
-    >
-      <div className="form__input">
+    <motion.form ref={form} onSubmit={handleSubmit(onSubmit)}>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 100 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        className="form__input"
+      >
         <div className="form_group">
           <label htmlFor="name">Name*</label>
           <input
@@ -102,8 +101,18 @@ const Form = () => {
               : "This field is required"}
           </p>
         </div>
-      </div>
-      <div className="form_group">
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 100 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        className="form_group"
+      >
         <label htmlFor="message">Message*</label>
         <textarea
           name="message"
@@ -113,8 +122,18 @@ const Form = () => {
         <p className={`error__message ${errors.message && "show"}`}>
           This field is required
         </p>
-      </div>
-      <div className="contact__btns">
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.5 }}
+        transition={{ duration: 0.5 }}
+        variants={{
+          hidden: { opacity: 0, y: 100 },
+          visible: { opacity: 1, y: 0 },
+        }}
+        className="contact__btns"
+      >
         <button className="btn" type="submit">
           Submit now
         </button>
@@ -132,7 +151,7 @@ const Form = () => {
             sakilahmed.dev@gmail.com
           </span>
         </div>
-      </div>
+      </motion.div>
       <ToastContainer
         position="top-center"
         autoClose={5000}
