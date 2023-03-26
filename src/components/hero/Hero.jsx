@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Hero.scss";
 import AnimatedLetters from "./../AnimatedLetters/index";
 import img from "./../../assets/avater-removebg-preview.png";
+import Button from "../Button/Button";
 
 const Hero = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -34,9 +35,7 @@ const Hero = () => {
               <h5 className="hero__subtitle">Sakil Ahmed</h5>
             </div>
             <div className="btns">
-              <a className="contact__btn" href="#contact">
-                Contact Me
-              </a>
+              <Button btnText="Contact Me" btnLink={"#contact"} />
             </div>
           </div>
           <div className="hero__right__img animate__animated animate__fadeInRight">

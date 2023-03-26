@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Header.scss";
 import { HiOutlineMenuAlt1 } from "react-icons/hi";
-import { AiOutlineSearch } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
 import Menubar from "./navbar/Navbar";
 import logo from "./../../assets/logo.png";
@@ -35,7 +34,7 @@ const Header = () => {
             </div>
             <Menubar />
           </nav>
-          <div className="btn">
+          <div className="header__btn">
             <a className="resume__btn" href="Resume.pdf" download>
               Resume
             </a>

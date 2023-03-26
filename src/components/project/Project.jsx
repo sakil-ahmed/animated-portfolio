@@ -2,65 +2,9 @@ import React, { useEffect, useState } from "react";
 import "./Project.scss";
 import AnimatedLetters from "./../AnimatedLetters/index";
 import Card from "./../card/Card";
-import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import minimog from "./../../assets/minimog.png";
-import okiro from "./../../assets/okairo.png";
-import grover from "./../../assets/grover.png";
-import portfolio from "./../../assets/portfolio.webp";
-import startbox from "./../../assets/start.png";
-
-const card = [
-  {
-    id: 1,
-    img: minimog,
-    title: "",
-    subTitle: "Minimog",
-    path: "https://minimog.netlify.app/",
-    git: "https://github.com/sakil-ahmed/Minimog",
-  },
-  {
-    id: 2,
-    img: okiro,
-    title: "",
-    subTitle: "Okiro",
-    path: "https://okario.netlify.app",
-    git: "https://github.com/sakil-ahmed/Okiro",
-  },
-  {
-    id: 3,
-    img: grover,
-    title: "",
-    subTitle: "Grover Store",
-    path: "https://groverstore.netlify.app",
-    git: "https://github.com/sakil-ahmed/grover",
-  },
-  {
-    id: 4,
-    img: portfolio,
-    title: "",
-    subTitle: "portfolio V2",
-    path: "https://sakilsahmed.netlify.app/",
-    git: "https://github.com/sakil-ahmed/primary-portfolio",
-  },
-  {
-    id: 5,
-    img: "https://tonu-next-light.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimg-6.6ac3b5b1.jpg&w=640&q=75",
-    title: "",
-    subTitle: "Start Box",
-    path: "https://startbox.netlify.app",
-    git: "",
-  },
-  {
-    id: 6,
-    img: startbox,
-    title: "",
-    subTitle: "Start Box",
-    path: "https://startbox.netlify.app",
-    git: "https://github.com/sakil-ahmed/Startbox",
-  },
-];
-
+import Button from "./../Button/Button";
+import { card } from "./../../../public/data/CardData";
 const Project = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const textArrayname = "My Latest Project".split("");
@@ -99,7 +43,7 @@ const Project = () => {
             })}
           </motion.div>
           <div className="project__btns">
-            <Link to="/work">View all work</Link>
+            <Button btnLink={"#work"} btnText="View all work" />
           </div>
         </div>
       </div>
