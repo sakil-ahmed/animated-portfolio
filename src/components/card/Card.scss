@@ -17,8 +17,6 @@
   .card__content {
     transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
     position: absolute;
-    left: 0;
-    bottom: -100%;
     width: 100%;
     height: 100%;
     display: flex;
@@ -43,12 +41,41 @@
       }
     }
   }
+  .left {
+    left: -100% !important;
+    bottom: 0;
+    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+  }
+  .right {
+    right: -100% !important;
+    bottom: 0;
+    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+  }
+  .bottom {
+    bottom: -100% !important;
+    left: 0;
+    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+  }
+  .top {
+    top: -100% !important;
+    left: 0;
+    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
+  }
   &:hover {
     .card__thumbnail {
       transform: scale(1.1);
     }
-    .card__content {
-      bottom: 0;
+    .left {
+      left: 0 !important;
+    }
+    .right {
+      right: 0 !important;
+    }
+    .bottom {
+      bottom: 0 !important;
+    }
+    .top {
+      top: 0 !important;
     }
   }
 }
