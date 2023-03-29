@@ -3,6 +3,7 @@ import okiro from "./../../src/assets/okairo.png";
 import grover from "./../../src/assets/grover.png";
 import portfolio from "./../../src/assets/portfolio.webp";
 import startbox from "./../../src/assets/start.png";
+import flower from "./../../src/assets/Thumb.png";
 
 export const card = [
   {
@@ -39,9 +40,9 @@ export const card = [
   },
   {
     id: 5,
-    img: "https://tonu-next-light.netlify.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fimg-6.6ac3b5b1.jpg&w=640&q=75",
+    img: flower,
     title: "",
-    subTitle: "Start Box",
+    subTitle: "Choicest Flower Shop",
     path: "https://startbox.netlify.app",
     git: "",
   },

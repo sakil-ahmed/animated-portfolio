@@ -10,7 +10,8 @@
     transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
     img {
       width: 100%;
-      height: 100%;
+      height: 100% !important;
+      object-fit: cover;
     }
   }
 
@@ -42,24 +43,24 @@
     }
   }
   .left {
+    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
     left: -100% !important;
     bottom: 0;
-    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
   }
   .right {
+    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
     right: -100% !important;
     bottom: 0;
-    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
   }
   .bottom {
+    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
     bottom: -100% !important;
     left: 0;
-    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
   }
   .top {
+    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
     top: -100% !important;
     left: 0;
-    transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
   }
   &:hover {
     .card__thumbnail {

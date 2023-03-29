@@ -9,8 +9,8 @@ const Card = ({ item: { img, subTitle, path, git } }) => {
   const [direction, setDirection] = useState("bottom");
 
   const handleMouseEnter = (event) => {
-    const button = event.target;
-    const rect = button.getBoundingClientRect();
+    const card = event.target;
+    const rect = card.getBoundingClientRect();
     const x = event.clientX - rect.x;
     const y = event.clientY - rect.y;
 
