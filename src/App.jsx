@@ -9,6 +9,7 @@ import { BsArrowUpShort } from "react-icons/bs";
 
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     Aos.init();

@@ -4,12 +4,16 @@ import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { MdClose } from "react-icons/md";
 import Menubar from "./navbar/Navbar";
 import logo from "./../../assets/logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header className="header" id="header">
+    <header
+      className="header animate__animated animate__fadeInDown"
+      id="header"
+    >
       <div className="container__fluid">
         <div className="row">
           <div className="mobile__menu__bar">
@@ -21,7 +25,9 @@ const Header = () => {
             </button>
           </div>
           <div className="logo">
-            <img src={logo} alt="Sakil Logo" />
+            <Link to={"/"}>
+              <img src={logo} alt="Sakil Logo" />
+            </Link>
           </div>
           <nav className={`nav__menu ${isMenuOpen && "nav__menu__open"}`}>
             <div className="close__menu">
