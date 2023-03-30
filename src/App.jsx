@@ -34,7 +34,10 @@ function App() {
         <Route index element={<Home />} />
         <Route path="/work" element={<Work />} />
       </Routes>
-      <a className={`top__link ${showClass}`} href={"#header"}>
+      <a
+        className={`top__link ${showClass} animate__animated animate__animated`}
+        href={"#header"}
+      >
         <BsArrowUpShort />
       </a>
     </div>
