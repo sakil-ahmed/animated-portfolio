@@ -3,7 +3,7 @@
   background-color: $white !important;
   border-bottom: 1px solid #ebebeb;
   padding: 25px 0;
-  z-index: 9999;
+
   .row {
     display: flex;
     align-items: center;
@@ -30,16 +30,16 @@
       img {
         width: 100%;
         height: 100%;
-        object-fit: contain;
+        object-fit: cover;
       }
     }
     .nav__menu {
       transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
       @media ($tablet_max) {
-        position: fixed;
+        position: fixed !important;
         top: 0;
         left: -100%;
-        width: 250px;
+        width: 100%;
         height: 100vh;
         background: #000;
         z-index: 9999;

@@ -10,6 +10,10 @@
   }
   li {
     list-style: none;
+
+    @media ($tablet_max) {
+      margin-bottom: 30px;
+    }
     a {
       text-decoration: none;
       margin: 0 10px;
