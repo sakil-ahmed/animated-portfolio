@@ -18,9 +18,9 @@
     position: relative;
     display: inline-block;
     margin-bottom: 25px;
-    background: #fff;
+    background: $white;
     z-index: 1;
-    color: #323232;
+    color: $titleColor;
     &::before {
       position: absolute;
       left: 0;
@@ -28,7 +28,7 @@
       height: 39px;
       width: 39px;
       content: "";
-      border: 2px solid #323232;
+      border: 2px solid $titleColor;
       z-index: -11;
     }
     &::after {
@@ -38,7 +38,7 @@
       height: 20px;
       width: 20px;
       content: "";
-      background: #fff;
+      background: $white;
       z-index: -1;
     }
   }
@@ -64,7 +64,7 @@
     }
 
     .tagcloud--item:hover {
-      color: #00ff7f;
+      color: $primary;
     }
   }
 }

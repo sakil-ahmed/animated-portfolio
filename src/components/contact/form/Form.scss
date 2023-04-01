@@ -5,7 +5,7 @@ form {
     label {
       margin-bottom: 5px;
       font-style: normal;
-      font-weight: 400;
+      font-weight: $Regular;
       font-size: 15px;
       line-height: 160%;
     }
@@ -57,8 +57,8 @@ form {
       flex-direction: column;
     }
     .btn {
-      background: #19181d;
-      color: #fff;
+      background: $btnColor;
+      color: $white;
       display: inline-block;
       font-weight: 600;
       padding: 15px 45px;
@@ -77,8 +77,8 @@ form {
       }
       &:hover {
         background: transparent;
-        color: #19181d;
-        border: 1px solid #19181d;
+        color: $btnColor;
+        border: 1px solid $btnColor;
       }
     }
     .text {
@@ -106,7 +106,7 @@ form {
   .error__message {
     opacity: 0;
     visibility: hidden;
-    color: red;
+    color: $red;
     font-size: 14px;
     margin-top: 5px;
   }

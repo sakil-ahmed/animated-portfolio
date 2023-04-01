@@ -22,7 +22,7 @@
     h1 {
       font-size: 150px;
       letter-spacing: 5px;
-      color: #f7f7f7;
+      color: $PrimaryHeading;
       line-height: 200px;
       text-transform: uppercase;
       @media ($desktop_max) {
@@ -46,7 +46,7 @@
         font-size: 70px;
         line-height: 80px;
         margin: 10px 0 25px;
-        color: #323232;
+        color: $titleColor;
         @media (max-width: 1122px) {
           font-size: 60px;
         }
@@ -80,7 +80,7 @@
         letter-spacing: 5px;
         position: relative;
 
-        color: #687693;
+        color: $textPrimary;
         line-height: 1.5em;
         margin-bottom: 1rem;
         position: relative;

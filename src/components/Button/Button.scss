@@ -1,8 +1,10 @@
+@import "./../../styles/Variables";
+
 .btn {
-  background: #19181d;
-  color: #fff;
+  background: $btnColor;
+  color: $white;
   display: inline-block;
-  font-weight: 600;
+  font-weight: $SemiBold;
   padding: 15px 45px;
   border: 1px solid transparent;
   text-transform: capitalize;
@@ -15,7 +17,7 @@
   cursor: pointer;
   &:hover {
     background: transparent;
-    color: #19181d;
-    border: 1px solid #19181d;
+    color: $btnColor;
+    border: 1px solid $btnColor;
   }
 }

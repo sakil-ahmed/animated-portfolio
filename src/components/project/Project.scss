@@ -6,7 +6,7 @@
   border-bottom: 1px solid #ebebeb;
 
   .subtitle {
-    font-weight: 400;
+    font-weight: $Regular;
     font-size: 18px;
     line-height: 26px;
     letter-spacing: 0.01em;
@@ -15,9 +15,9 @@
     position: relative;
     display: inline-block;
     margin-bottom: 25px;
-    background: #fff;
+    background: $white;
     z-index: 1;
-    color: #323232;
+    color: $titleColor;
     &::before {
       position: absolute;
       left: 0;
@@ -25,7 +25,7 @@
       height: 39px;
       width: 39px;
       content: "";
-      border: 2px solid #323232;
+      border: 2px solid $titleColor;
       z-index: -11;
     }
     &::after {
@@ -35,7 +35,7 @@
       height: 20px;
       width: 20px;
       content: "";
-      background: #fff;
+      background: $white;
       z-index: -1;
     }
   }
@@ -60,8 +60,8 @@
     text-align: center;
     margin-top: 40px;
     a {
-      background: #19181d;
-      color: #fff;
+      background: $btnColor;
+      color: $white;
       display: inline-block;
       font-weight: 600;
       padding: 15px 45px;
@@ -76,8 +76,8 @@
       text-decoration: none;
       &:hover {
         background: transparent;
-        color: #19181d;
-        border: 1px solid #19181d;
+        color: $btnColor;
+        border: 1px solid $btnColor;
       }
     }
   }

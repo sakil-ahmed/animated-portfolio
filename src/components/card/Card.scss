@@ -1,3 +1,5 @@
+@import "./../../styles/Variables";
+
 .card__box {
   position: relative;
   width: 334px;
@@ -24,20 +26,20 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background: rgba(14, 29, 44, 0.7);
+    background: rgba($black, 0.7);
     h3,
     p {
-      color: #fff;
+      color: $white;
     }
     .icons {
       display: flex;
       gap: 10px;
       margin-top: 10px;
       a {
-        color: #fff;
+        color: $white;
         transition: all 0.3s cubic-bezier(0, 0, 0.2, 1);
         &:hover {
-          color: rgb(0, 192, 255);
+          color: $primary;
         }
       }
     }
