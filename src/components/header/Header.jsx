@@ -10,10 +10,7 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <header
-      className="header animate__animated animate__fadeInDown"
-      id="header"
-    >
+    <header className="header" id="header">
       <div className="container__fluid">
         <div className="row">
           <div className="mobile__menu__bar">
