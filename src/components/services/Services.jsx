@@ -42,6 +42,8 @@ const Services = () => {
         </div>
         <div className="card__container">
           <ServiceCard />
+          <ServiceCard />
+          <ServiceCard />
         </div>
       </div>
     </section>
