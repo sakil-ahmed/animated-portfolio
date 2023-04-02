@@ -5,6 +5,7 @@ import Card from "./../card/Card";
 import { motion } from "framer-motion";
 import Button from "./../Button/Button";
 import { card } from "./../../../public/data/CardData";
+
 const Project = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const textArrayname = "My Latest Project".split("");

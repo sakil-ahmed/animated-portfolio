@@ -31,6 +31,7 @@ const WordCloud = () => {
     "GatsbyJs",
     "GraphQL",
   ];
+
   const options = {
     radius: optionRadius,
 
