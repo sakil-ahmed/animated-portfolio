@@ -9,6 +9,8 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const mobileMenu = () => {};
+
   return (
     <header className="header" id="header">
       <div className="container__fluid">
@@ -35,7 +37,7 @@ const Header = () => {
                 <MdClose />
               </button>
             </div>
-            <Menubar />
+            <Menubar setIsMenuOpen={setIsMenuOpen} />
           </nav>
           <div className="header__btn">
             <a className="resume__btn" href="Resume.pdf" download>
