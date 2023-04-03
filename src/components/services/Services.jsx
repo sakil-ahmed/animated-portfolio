@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Services.scss";
 import { motion } from "framer-motion";
 import AnimatedLetters from "./../AnimatedLetters/index";
+import { serviceCard } from "./../../../public/data/CardData";
 import ServiceCard from "./serviceCard/ServiceCard";
 
 const Services = () => {
@@ -41,9 +42,9 @@ const Services = () => {
           <h1>Services</h1>
         </div>
         <div className="card__container">
-          <ServiceCard icon={"web"} />
-          <ServiceCard icon={"res"} />
-          <ServiceCard icon={"web"} />
+          {serviceCard.map((item, i) => {
+            return <ServiceCard key={i} item={item} />;
+          })}
         </div>
       </div>
     </section>

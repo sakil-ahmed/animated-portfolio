@@ -55,3 +55,24 @@ export const card = [
     git: "https://github.com/sakil-ahmed/Startbox",
   },
 ];
+
+export const serviceCard = [
+  {
+    title: "Web Development",
+    description:
+      "A wonderful serenity has taken possession of my entire soul, like these sweet mornings.",
+    icon: "web",
+  },
+  {
+    title: "Mobile Responsive",
+    description:
+      "A wonderful serenity has taken possession of my entire soul, like these sweet mornings.",
+    icon: "res",
+  },
+  {
+    title: "Web Development",
+    description:
+      "A wonderful serenity has taken possession of my entire soul, like these sweet mornings.",
+    icon: "web",
+  },
+];

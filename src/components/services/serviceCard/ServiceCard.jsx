@@ -2,11 +2,11 @@ import React from "react";
 import "./ServiceCard.scss";
 import { Link } from "react-router-dom";
 import { ImArrowRight2 } from "react-icons/im";
-import CodeOffOutlinedIcon from "@mui/icons-material/CodeOffOutlined";
+import { HiCode } from "react-icons/hi";
 import ImportantDevicesOutlinedIcon from "@mui/icons-material/ImportantDevicesOutlined";
 import { motion } from "framer-motion";
 
-const ServiceCard = ({ icon }) => {
+const ServiceCard = ({ item: { icon, title, description } }) => {
   return (
     <motion.div
       initial="hidden"
@@ -22,7 +22,7 @@ const ServiceCard = ({ icon }) => {
       <div className="inner">
         <div className="icon">
           {icon === "web" ? (
-            <CodeOffOutlinedIcon />
+            <HiCode size={"50px"} />
           ) : icon === "res" ? (
             <ImportantDevicesOutlinedIcon />
           ) : (
@@ -30,11 +30,8 @@ const ServiceCard = ({ icon }) => {
           )}
         </div>
         <div className="service__content">
-          <h4 className="service__card__title">Web Development</h4>
-          <p className="service__card__description">
-            It uses a dictionary of over 200 Latin words, combined witha handful
-            of model sentence.
-          </p>
+          <h4 className="service__card__title">{title}</h4>
+          <p className="service__card__description">{description}</p>
           <Link className="read-more-button" to={"#"}>
             <ImArrowRight2 />
           </Link>
