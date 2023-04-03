@@ -41,9 +41,9 @@ const Services = () => {
           <h1>Services</h1>
         </div>
         <div className="card__container">
-          <ServiceCard />
-          <ServiceCard />
-          <ServiceCard />
+          <ServiceCard icon={"web"} />
+          <ServiceCard icon={"res"} />
+          <ServiceCard icon={"web"} />
         </div>
       </div>
     </section>
