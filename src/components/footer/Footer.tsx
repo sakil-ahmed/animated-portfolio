@@ -19,7 +19,7 @@ const Footer = () => {
             <a href="https://www.facebook.com/sakilahmed009" target="_blank">
               <RiFacebookFill />
             </a>
-            <a href="https://twitter.com/MDSAKIL58063252" disabled={true}>
+            <a href="https://twitter.com/MDSAKIL58063252" target="_blank">
               <AiOutlineTwitter />
             </a>
             <a

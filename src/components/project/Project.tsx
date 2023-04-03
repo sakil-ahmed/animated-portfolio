@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import "./Project.scss";
-import AnimatedLetters from "./../AnimatedLetters/index";
-import Card from "./../card/Card";
+import AnimatedLetters from "../AnimatedLetters/index";
+import Card from "../card/Card";
 import { motion } from "framer-motion";
-import Button from "./../Button/Button";
-import { card } from "./../../../public/data/CardData";
+import Button from "../Button/Button";
+import { card } from "../../../public/data/CardData";
 
 const Project = () => {
   const [letterClass, setLetterClass] = useState("text-animate");

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Contact.scss";
-import AnimatedLetters from "./../AnimatedLetters/index";
+import AnimatedLetters from "../AnimatedLetters/index";
 import Form from "./form/Form";
 import { motion } from "framer-motion";
 

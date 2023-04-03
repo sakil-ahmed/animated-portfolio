@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Hero.scss";
-import AnimatedLetters from "./../AnimatedLetters/index";
+import AnimatedLetters from "../AnimatedLetters/index";
 import img from "./../../assets/avater-removebg-preview.png";
 import Button from "../Button/Button";
 

@@ -1,24 +1,23 @@
 import React, { useEffect, useState } from "react";
-import "./Services.scss";
+import "./Skills.scss";
+import WordCloud from "./WordCloud";
 import { motion } from "framer-motion";
-import AnimatedLetters from "./../AnimatedLetters/index";
-import { serviceCard } from "./../../../public/data/CardData";
-import ServiceCard from "./serviceCard/ServiceCard";
+import AnimatedLetters from "../AnimatedLetters/index";
 
-const Services = () => {
+const Skills = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
-  const textArrayname = "My best services".split("");
+  const textArrayname = "My Skills".split("");
 
   useEffect(() => {
     setLetterClass("text-animate-hover");
   }, []);
 
   return (
-    <section className="services" id="service">
+    <section className="skills" id="skills">
       <div className="container">
         <div className="row line">
           <div style={{ textAlign: "center" }}>
-            <span className="subtitle">Check services</span>
+            <span className="subtitle">My Skills</span>
           </div>
           <motion.h2
             initial="hidden"
@@ -38,17 +37,10 @@ const Services = () => {
             />
           </motion.h2>
         </div>
-        <div className="visible__text">
-          <h1>Services</h1>
-        </div>
-        <div className="card__container">
-          {serviceCard.map((item, i) => {
-            return <ServiceCard key={i} item={item} />;
-          })}
-        </div>
+        <WordCloud />
       </div>
     </section>
   );
 };
 
-export default Services;
+export default Skills;

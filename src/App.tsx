@@ -1,4 +1,3 @@
-import Aos from "aos";
 import React, { useEffect, useState } from "react";
 import "./App.scss";
 import "aos/dist/aos.css";
@@ -12,8 +11,6 @@ function App() {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    Aos.init();
-
     function handleScroll() {
       setScrollPosition(window.scrollY);
     }
