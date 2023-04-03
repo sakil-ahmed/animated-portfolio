@@ -2,7 +2,7 @@ import React from "react";
 import "./Navbar.scss";
 import { Link } from "react-router-dom";
 
-const Navbar = ({ setIsMenuOpen }) => {
+const Navbar = ({ setIsMenuOpen }: any) => {
   return (
     <ul className="nav__menu__items">
       <li onClick={() => setIsMenuOpen(false)}>

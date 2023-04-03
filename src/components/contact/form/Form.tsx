@@ -17,7 +17,7 @@ const Form = () => {
     formState: { errors },
   } = useForm();
 
-  const onSubmit = (data) => {
+  const onSubmit = () => {
     emailjs
       .sendForm(
         "service_28srm6x",

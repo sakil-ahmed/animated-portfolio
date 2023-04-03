@@ -1,25 +1,23 @@
 import React, { useEffect, useState } from "react";
-import "./Project.scss";
-import AnimatedLetters from "./../AnimatedLetters/index";
-import Card from "./../card/Card";
+import "./Skills.scss";
+import WordCloud from "./WordCloud";
 import { motion } from "framer-motion";
-import Button from "./../Button/Button";
-import { card } from "./../../../public/data/CardData";
+import AnimatedLetters from "../AnimatedLetters/index";
 
-const Project = () => {
+const Skills = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
-  const textArrayname = "My Latest Project".split("");
+  const textArrayname = "My Skills".split("");
 
   useEffect(() => {
     setLetterClass("text-animate-hover");
   }, []);
 
   return (
-    <section className="portfolio" id="portfolio">
+    <section className="skills" id="skills">
       <div className="container">
         <div className="row line">
           <div style={{ textAlign: "center" }}>
-            <span className="subtitle">Projects</span>
+            <span className="subtitle">My Skills</span>
           </div>
           <motion.h2
             initial="hidden"
@@ -38,18 +36,11 @@ const Project = () => {
               idx={15}
             />
           </motion.h2>
-          <motion.div className="card__container">
-            {card.map((item) => {
-              return <Card key={item.id} item={item} />;
-            })}
-          </motion.div>
-          <div className="project__btns">
-            <Button btnLink={"#work"} btnText="View all work" />
-          </div>
         </div>
+        <WordCloud />
       </div>
     </section>
   );
 };
 
-export default Project;
+export default Skills;
