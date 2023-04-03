@@ -3,8 +3,8 @@ import "./Project.scss";
 import AnimatedLetters from "../AnimatedLetters/index";
 import Card from "../card/Card";
 import { motion } from "framer-motion";
-import Button from "../Button/Button";
 import { card } from "../../../public/data/CardData";
+import { Link } from "react-router-dom";
 
 const Project = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
@@ -39,12 +39,12 @@ const Project = () => {
             />
           </motion.h2>
           <motion.div className="card__container">
-            {card.map((item) => {
-              return <Card key={item.id} item={item} />;
+            {card.map((item: object, i: any) => {
+              return <Card key={i} item={item} />;
             })}
           </motion.div>
           <div className="project__btns">
-            <Button btnLink={"#work"} btnText="View all work" />
+            <Link to={"#work"}>View all work</Link>
           </div>
         </div>
       </div>
