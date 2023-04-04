@@ -10,6 +10,14 @@ const Project = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
   const textArrayname = "My Latest Project".split("");
 
+  interface priject {
+    id: number;
+    img: string;
+    subTitle: string;
+    liveLink: string;
+    repoLink: string;
+  }
+
   useEffect(() => {
     setLetterClass("text-animate-hover");
   }, []);
@@ -39,8 +47,8 @@ const Project = () => {
             />
           </motion.h2>
           <motion.div className="card__container">
-            {card.map((item: object, i: any) => {
-              return <Card key={i} item={item} />;
+            {card.map((item: priject) => {
+              return <Card key={item.id} item={item} />;
             })}
           </motion.div>
           <div className="project__btns">

@@ -5,58 +5,58 @@ import portfolio from "./../../src/assets/portfolio.webp";
 import startbox from "./../../src/assets/start.png";
 import flower from "./../../src/assets/Thumb.png";
 
-export const card: any = [
+export const card = [
   {
     id: 1,
     img: minimog,
     title: "",
     subTitle: "Minimog",
-    path: "https://minimog.netlify.app/",
-    git: "https://github.com/sakil-ahmed/Minimog",
+    liveLink: "https://minimog.netlify.app/",
+    repoLink: "https://github.com/sakil-ahmed/Minimog",
   },
   {
     id: 2,
     img: okiro,
     title: "",
     subTitle: "Okiro",
-    path: "https://okario.netlify.app",
-    git: "https://github.com/sakil-ahmed/Okiro",
+    liveLink: "https://okario.netlify.app",
+    repoLink: "https://github.com/sakil-ahmed/Okiro",
   },
   {
     id: 3,
     img: grover,
     title: "",
     subTitle: "Grover Store",
-    path: "https://groverstore.netlify.app",
-    git: "https://github.com/sakil-ahmed/grover",
+    liveLink: "https://groverstore.netlify.app",
+    repoLink: "https://github.com/sakil-ahmed/grover",
   },
   {
     id: 4,
     img: portfolio,
     title: "",
     subTitle: "portfolio V2",
-    path: "https://sakilsahmed.netlify.app/",
-    git: "https://github.com/sakil-ahmed/primary-portfolio",
+    liveLink: "https://sakilsahmed.netlify.app/",
+    repoLink: "https://github.com/sakil-ahmed/primary-portfolio",
   },
   {
     id: 5,
     img: flower,
     title: "",
     subTitle: "Choicest Flower Shop",
-    path: "https://startbox.netlify.app",
-    git: "",
+    liveLink: "https://startbox.netlify.app",
+    repoLink: "",
   },
   {
     id: 6,
     img: startbox,
     title: "",
     subTitle: "Start Box",
-    path: "https://startbox.netlify.app",
-    git: "https://github.com/sakil-ahmed/Startbox",
+    liveLink: "https://startbox.netlify.app",
+    repoLink: "https://github.com/sakil-ahmed/Startbox",
   },
 ];
 
-export const serviceCard: any = [
+export const serviceCard = [
   {
     title: "Web Development",
     description:

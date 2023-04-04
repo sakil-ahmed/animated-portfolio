@@ -5,7 +5,7 @@ import { AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const Card = ({ item: { img, subTitle, path, git } }: any) => {
+const Card = ({ item: { img, subTitle, liveLink, repoLink } }: any) => {
   const [direction, setDirection] = useState("bottom");
 
   const handleMouseEnter = (event: any) => {
@@ -47,10 +47,10 @@ const Card = ({ item: { img, subTitle, path, git } }: any) => {
         <h3>Website Development</h3>
         <p>{subTitle}</p>
         <div className="icons">
-          <a href={path} target="_blank">
+          <a href={liveLink} target="_blank">
             <HiEye size={"25px"} />
           </a>
-          <a href={git} target="_blank">
+          <a href={repoLink} target="_blank">
             <AiFillGithub size={"25px"} />
           </a>
         </div>
