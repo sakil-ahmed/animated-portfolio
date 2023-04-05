@@ -5,7 +5,7 @@ import portfolio from "./../../src/assets/portfolio.webp";
 import startbox from "./../../src/assets/start.png";
 import flower from "./../../src/assets/Thumb.png";
 
-export const card = [
+export const card: any = [
   {
     id: 1,
     img: minimog,
@@ -56,7 +56,7 @@ export const card = [
   },
 ];
 
-export const serviceCard = [
+export const serviceCard: any = [
   {
     title: "Web Development",
     description:

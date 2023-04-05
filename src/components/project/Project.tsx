@@ -1,24 +1,25 @@
 import React, { useEffect, useState } from "react";
-import "./Services.scss";
+import "./Project.scss";
+import AnimatedLetters from "../AnimatedLetters/index";
+import Card from "../card/Card";
 import { motion } from "framer-motion";
-import AnimatedLetters from "./../AnimatedLetters/index";
-import { serviceCard } from "./../../../public/data/CardData";
-import ServiceCard from "./serviceCard/ServiceCard";
+import { card } from "../../../public/data/CardData";
+import { Link } from "react-router-dom";
 
-const Services = () => {
+const Project = () => {
   const [letterClass, setLetterClass] = useState("text-animate");
-  const textArrayname = "My best services".split("");
+  const textArrayname = "My Latest Project".split("");
 
   useEffect(() => {
     setLetterClass("text-animate-hover");
   }, []);
 
   return (
-    <section className="services" id="service">
+    <section className="portfolio" id="portfolio">
       <div className="container">
         <div className="row line">
           <div style={{ textAlign: "center" }}>
-            <span className="subtitle">Check services</span>
+            <span className="subtitle">Projects</span>
           </div>
           <motion.h2
             initial="hidden"
@@ -37,18 +38,18 @@ const Services = () => {
               idx={15}
             />
           </motion.h2>
-        </div>
-        <div className="visible__text">
-          <h1>Services</h1>
-        </div>
-        <div className="card__container">
-          {serviceCard.map((item, i) => {
-            return <ServiceCard key={i} item={item} />;
-          })}
+          <motion.div className="card__container">
+            {card.map((item: object, i: any) => {
+              return <Card key={i} item={item} />;
+            })}
+          </motion.div>
+          <div className="project__btns">
+            <Link to={"#work"}>View all work</Link>
+          </div>
         </div>
       </div>
     </section>
   );
 };
 
-export default Services;
+export default Project;

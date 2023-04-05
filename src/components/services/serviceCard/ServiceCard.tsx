@@ -6,7 +6,7 @@ import { HiCode } from "react-icons/hi";
 import ImportantDevicesOutlinedIcon from "@mui/icons-material/ImportantDevicesOutlined";
 import { motion } from "framer-motion";
 
-const ServiceCard = ({ item: { icon, title, description } }) => {
+const ServiceCard = ({ item: { icon, title, description } }: any) => {
   return (
     <motion.div
       initial="hidden"

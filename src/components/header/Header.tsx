@@ -9,8 +9,6 @@ import { Link } from "react-router-dom";
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const mobileMenu = () => {};
-
   return (
     <header className="header" id="header">
       <div className="container__fluid">

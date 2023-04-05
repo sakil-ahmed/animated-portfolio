@@ -5,10 +5,10 @@ import { AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
 import { useState } from "react";
 
-const Card = ({ item: { img, subTitle, path, git } }) => {
+const Card = ({ item: { img, subTitle, path, git } }: any) => {
   const [direction, setDirection] = useState("bottom");
 
-  const handleMouseEnter = (event) => {
+  const handleMouseEnter = (event: any) => {
     const card = event.target;
     const rect = card.getBoundingClientRect();
     const x = event.clientX - rect.x;
