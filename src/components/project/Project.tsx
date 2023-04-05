@@ -44,7 +44,7 @@ const Project = () => {
             })}
           </motion.div>
           <div className="project__btns">
-            <Link to={"#work"}>View all work</Link>
+            <Link to={"/work"}>View all work</Link>
           </div>
         </div>
       </div>
