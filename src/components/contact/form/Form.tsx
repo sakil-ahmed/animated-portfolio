@@ -8,7 +8,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Form = () => {
-  const form = useRef();
+  const form: any = useRef();
 
   const {
     register,
@@ -37,6 +37,7 @@ const Form = () => {
             progress: undefined,
             theme: "light",
           });
+          form.current.reset();
         },
         (error) => {
           toast.error("There was an error try again", {
@@ -51,8 +52,6 @@ const Form = () => {
           });
         }
       );
-
-    form.current.reset();
   };
 
   return (
